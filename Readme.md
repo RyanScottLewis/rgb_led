@@ -12,7 +12,8 @@ An RGB LED controller for AT microcontrollers with bonus RSpec formatter.
 
 ### Executable
 
-The executable is a simple `pry` based REPL:
+The executable is a simple `pry` based REPL.  
+Note that all usage here is applicable with the "Library" section below as well.
 
 #### Simple Usage
 
@@ -39,6 +40,17 @@ RGB LED >   value = (Math.sin(x) + 1.0) / 2.0 # sin is a range from -1.0 to 1.0,
 RGB LED >   update(value, 0, 0)
 RGB LED >   x += 0.01
 RGB LED > end
+```
+
+#### Color Gem
+
+The [color](https://github.com/halostatue/color) gem can output red, green, and blue values in the 0.0 to 0.1 range, so we're able to use it to parse HTML/CSS color strings to set our LED color:
+
+```sh
+$ rgb_led
+RGB LED > require 'color'
+RGB LED > color = Color::RGB.from_html('#47021E')
+RGB LED > update(color.r, color.g, color.b)
 ```
 
 ### Library
