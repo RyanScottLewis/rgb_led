@@ -14,6 +14,8 @@ An RGB LED controller for AT microcontrollers with bonus RSpec formatter.
 
 The executable is a simple `pry` based REPL:
 
+#### Simple Usage
+
 ```sh
 $ rgb_led
 RGB LED > red
@@ -22,6 +24,21 @@ RGB LED > blue
 RGB LED > update(1, 0.1, 0)
 RGB LED > off
 RGB LED > exit
+```
+
+#### Pulsing Red
+
+Since it's just using a Ruby `pry` REPL, we can program the LED to do whatever we want.  
+Here, we're pulsing the LED red using a sine wave:
+
+```sh
+$ rgb_led
+RGB LED > x = 0.0
+RGB LED > loop do
+RGB LED >   value = (Math.sin(x) + 1.0) / 2.0
+RGB LED >   update(value, 0, 0)
+RGB LED >   x += 0.01
+RGB LED > end
 ```
 
 ### Library
