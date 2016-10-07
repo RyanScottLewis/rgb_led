@@ -19,6 +19,7 @@ $ rgb_led
 RGB LED > red
 RGB LED > green
 RGB LED > blue
+RGB LED > update(1, 0.1, 0)
 RGB LED > off
 RGB LED > exit
 ```
