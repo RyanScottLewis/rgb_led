@@ -7,4 +7,5 @@
 * Other test suite formatters
 * Use GPL? Look into other licenses
 * Tests! Oh the irony..
+* Remove `pry` dependency
 

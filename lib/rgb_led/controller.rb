@@ -11,7 +11,7 @@ module RGBLED
     #
     # @param [String] path The path to the USB device
     def open(path, &block)
-      @io = File.open(path, 'r+') # TODO: r+ will create the file if it doesn't exist =(
+      @io = File.open(path, 'r+') # TODO: r+ will create the file if it doesn't exist =( Do a exists? check before this and simply return nil? Or raise error? I hate errorrrs
 
       @io.readbyte # Sync
 

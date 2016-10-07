@@ -10,6 +10,23 @@ An RGB LED controller for AT microcontrollers with bonus RSpec formatter.
 
 ## Usage
 
+### Executable
+
+The executable is a simple `pry` based REPL:
+
+```sh
+$ rgb_led
+RGB LED > red
+RGB LED > green
+RGB LED > blue
+RGB LED > off
+RGB LED > exit
+```
+
+### Library
+
+#### With Block
+
 ```rb
 require 'rgb_led'
 
