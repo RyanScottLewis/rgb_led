@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'pry'
+require 'rgb_led'
+
+Pry.config.prompt = proc { "RGB LED > " }
+
+# TODO: ARGV[0] below for path
+RGBLED::Controller.open('/dev/cu.usbmodem1431') do |controller|
+  controller.pry
+end
+
