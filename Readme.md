@@ -35,7 +35,7 @@ Here, we're pulsing the LED red using a sine wave:
 $ rgb_led
 RGB LED > x = 0.0
 RGB LED > loop do
-RGB LED >   value = (Math.sin(x) + 1.0) / 2.0
+RGB LED >   value = (Math.sin(x) + 1.0) / 2.0 # sin is a range from -1.0 to 1.0, so we modify it to a 0.0...1.0 range
 RGB LED >   update(value, 0, 0)
 RGB LED >   x += 0.01
 RGB LED > end
