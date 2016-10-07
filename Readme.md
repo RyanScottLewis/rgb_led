@@ -43,7 +43,7 @@ RGBLED::Controller.open('/dev/usbdevicepath') do |controller|
 end
 ```
 
-## Without Block
+#### Without Block
 
 ```rb
 require 'rgb_led'
