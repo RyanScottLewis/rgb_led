@@ -10,4 +10,5 @@
 * RSpec options
   * Custom colors for each state
   * Timeout for when to turn off
+  * Change RSpec formatter config from `rgb_led_path` to a Hash `rgb_led[:path]` or even a Struct
 
