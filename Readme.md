@@ -71,6 +71,7 @@ end
 **.rspec**
 
 ```
+--require 'rgb_led/rspec_formatter'
 --format RGBLED::RSpecFormatter
 ```
 
