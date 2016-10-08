@@ -56,7 +56,7 @@ RGB LED > end
 
 #### Color Gem
 
-The [color](https://github.com/halostatue/color) gem can output red, green, and blue values in the 0.0 to 0.1 range, so we're able to use it to parse HTML/CSS color strings to set our LED color:
+The [color](https://github.com/halostatue/color) gem can output red, green, and blue values in the 0.0 to 1.0 range, so we're able to use it to parse HTML/CSS color strings to set our LED color:
 
 ```sh
 $ rgb_led
