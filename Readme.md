@@ -8,6 +8,18 @@ An RGB LED controller for AT microcontrollers with bonus RSpec formatter.
 
 ### RubyGems: `gem install rgb_led`
 
+## Setup
+
+Upload the `src/rgb_led.ino` to the microcontroller and use the following setup:
+
+### Breadboard
+
+![Breadboard](images/Breadboard.png)
+
+### Schematic
+
+![Schematic](images/Schematic.png)
+
 ## Usage
 
 ### Executable
